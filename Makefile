@@ -3,7 +3,9 @@
 # target: dependencies
 # 	action
 
-# para executar o Makefile: comando "make"
+# comandos:
+# para executar o Makefile: make
+# para limpar: make clean
 
 output: main.o message.o
 	g++ main.o message.o -o output
