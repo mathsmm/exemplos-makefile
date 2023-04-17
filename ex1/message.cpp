@@ -2,5 +2,5 @@
 #include <iostream>
 
 void message::printMessage() {
-    std::cout << "Makefile .\n";
+    std::cout << "Makefile example!\n";
 }
