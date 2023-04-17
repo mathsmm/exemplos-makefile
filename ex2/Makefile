@@ -11,7 +11,7 @@ OBJECTS=message.o main.o      # ARQUIVOS CÓDIGO-OBJETO
 
 BINARY=bin
 
-# "make all"
+# comando "make" executa a primeira regra deste arquivo.
 # --> all depende de $(BINARY). 
 # --> Ou seja, para preparar all, é preciso que $(BINARY) esteja preparada.
 # --> Se $(BINARY) não estiver preparada, executa a regra para $(BINARY).
@@ -37,4 +37,4 @@ message.o: message.cpp message.hpp
 #	$(CC) &(CFLAGS) -c $@ $^
 
 clean:
-	del /f /q $(BINARY) $(OBJECTS)
+	del /f /q $(BINARY).exe $(OBJECTS)
